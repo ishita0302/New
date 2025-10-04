@@ -1,0 +1,2049 @@
+{
+  "name": "",
+  "tagType": "Provider",
+  "tags": [
+    {
+      "name": "ThreePhaseAnalyzer",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "dataType": "Float4",
+          "name": "PΣ",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d730",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "fU1",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d733",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "SΣ",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d732",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "UrmsΣ",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d728",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "IrmsΣ",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d729",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "fI1",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d734",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "LambdaΣ",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d731",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        }
+      ]
+    },
+    {
+      "name": "_types_",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "name": "Injection Molding",
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "name": "Historized",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Machine Mode",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/MachineMode"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Mode Manual",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/ModeManual"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Mode Setup",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/ModeSetup"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Mode Semi",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/ModeSemi"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Active Alarm",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/ActiveAlarm"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "dataType": "String",
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Mold File Name",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/MoldFilename"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "dataType": "Boolean",
+                  "name": "Count_Change",
+                  "tagType": "AtomicTag",
+                  "value": false,
+                  "valueSource": "memory"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Mode Continuous",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/ModeContinuous"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Tonnage",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/Tonnage"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Total Material",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/TotalMaterial"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Mode No Cycle",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/ModeNoCycle"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Total Material Count",
+                  "sourceTagPath": {
+                    "bindType": "parameter",
+                    "binding": "[Sanford Edge]{ParentInstanceName}/TotalMaterialCnt"
+                  },
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                }
+              ]
+            },
+            {
+              "name": "Andon",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "alarms": [
+                    {
+                      "activePipeline": "Pentair_Pilot_2024_07_15/Molding Andon Pipeline",
+                      "clearPipeline": "Pentair_Pilot_2024_07_15/Molding Resolved Pipeline",
+                      "displayPath": {
+                        "bindType": "UDTParameter",
+                        "value": "{RootInstanceName}"
+                      },
+                      "inclusiveA": false,
+                      "label": {
+                        "bindType": "Expression",
+                        "value": "if({[.]../Status} \u003d 0, \u0027Stopped\u0027, \u0027Running\u0027)"
+                      },
+                      "mode": "AboveValue",
+                      "name": "Molding Andon Alert",
+                      "priority": "Medium"
+                    }
+                  ],
+                  "name": "Andon Status",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Reason01",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Andon Group",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "Andon"
+            },
+            {
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "name": "Shift",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "Shift Schedule ID",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Shift Data",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "EndTime",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "StartTime",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "Shift"
+            },
+            {
+              "dataType": "Boolean",
+              "name": "Run_Sound",
+              "tagType": "AtomicTag",
+              "value": false,
+              "valueSource": "memory"
+            },
+            {
+              "name": "OEE",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "Machine Andon Trigger",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Target",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Scrap",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "ProductionLineID",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Quality",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Work Order Count",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Production Counter",
+                      "opcItemPath": "ns\u003d1;s\u003d[Simulator]_Meta:Ramp/Ramp2",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Total Daily Count",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Scrap Count",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Consecutive Scrap",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Good Parts",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Hourly Scrap",
+                      "tagType": "AtomicTag"
+                    }
+                  ]
+                },
+                {
+                  "name": "Reset Daily Counts",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Add Hourly OEE",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Performance",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Target Rate",
+                      "tagType": "AtomicTag"
+                    }
+                  ]
+                },
+                {
+                  "name": "Availability",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Unplanned Downtime",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Uptime",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Planned Downtime",
+                      "tagType": "AtomicTag"
+                    }
+                  ]
+                },
+                {
+                  "name": "Site UTC offset",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Work Order Schedule Start",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "OEE"
+            },
+            {
+              "dataType": "Boolean",
+              "name": "Down_Sound",
+              "tagType": "AtomicTag",
+              "value": false,
+              "valueSource": "memory"
+            },
+            {
+              "name": "Work Order",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "ScheduleData",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Good Count",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Quantity",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Work Order ID",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "SKU",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Name",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "Work Order"
+            },
+            {
+              "name": "Cycle Time",
+              "sourceTagPath": {
+                "bindType": "parameter",
+                "binding": "[Sanford Edge]{ParentInstanceName}/CycleTime"
+              },
+              "tagType": "AtomicTag",
+              "valueSource": "reference"
+            },
+            {
+              "name": "Data",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "name": "Count",
+                  "tagType": "AtomicTag",
+                  "valueSource": "db"
+                },
+                {
+                  "alarms": [
+                    {
+                      "name": "Injection Molding Alarm",
+                      "priority": "Medium",
+                      "setpointA": 1.0
+                    }
+                  ],
+                  "dataType": "Boolean",
+                  "documentation": "Fault Status",
+                  "name": "Alarm is On",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "name": "Producing",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "dataType": "String",
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "valueSource": "memory"
+                },
+                {
+                  "name": "Cycle Time",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "dataType": "Boolean",
+                  "name": "Part Produced",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Assembly Line",
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "name": "Work Order",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "Quantity",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Work Order ID",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Name",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "ScheduleData",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "SKU",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Good Count",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "Work Order"
+            },
+            {
+              "name": "Shift",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "Shift Data",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "StartTime",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "EndTime",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Shift Schedule ID",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "Shift"
+            },
+            {
+              "name": "Status",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "name": "Andon",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "Andon Group",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "alarms": [
+                    {
+                      "activePipeline": "Pentair_Pilot_2024_07_15/Assembly Andon Pipeline",
+                      "clearPipeline": "Pentair_Pilot_2024_07_15/Assembly Resolved Pipeline",
+                      "displayPath": {
+                        "bindType": "UDTParameter",
+                        "value": "{RootInstanceName}"
+                      },
+                      "inclusiveA": false,
+                      "label": {
+                        "bindType": "Expression",
+                        "value": "if({[.]../Status} \u003d 0, \"Stopped\", \"Running\")"
+                      },
+                      "mode": "AboveValue",
+                      "name": "Assembly Andon Alarm"
+                    }
+                  ],
+                  "name": "Andon Status",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Reason01",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "Andon"
+            },
+            {
+              "name": "Data",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "documentation": "Equipment Status or current state (running, stopped, faulted, etc.)",
+                  "name": "Status",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "alarms": [
+                    {
+                      "activePipeline": "PentairPilot/Email Notification Pipeline",
+                      "name": "Assembly Line Alarm",
+                      "priority": "Medium",
+                      "setpointA": 1.0
+                    }
+                  ],
+                  "dataType": "Boolean",
+                  "documentation": "Fault Status",
+                  "eventScripts": [
+                    {
+                      "eventid": "alarmActive",
+                      "script": "\tlogger \u003d system.util.getLogger(\"alarmScript\")\n\tlogger.info(\"alarm activated\")\n\talarmInfo \u003d {\u0027tag\u0027: tag, \u0027tagPath\u0027: tagPath, \u0027alarmName\u0027: alarmName, \u0027alarmEvent\u0027: alarmEvent, \u0027alarmPath\u0027: alarmPath, \u0027missedEvents\u0027: missedEvents}\n\tsystem.util.sendMessage(project\u003d\"PentairPilot\", messageHandler\u003d\"alarmActive\", payload\u003dalarmInfo, scope\u003d\"S\")"
+                    },
+                    {
+                      "eventid": "alarmCleared",
+                      "script": "\tlogger \u003d system.util.getLogger(\"alarmScript\")\n\tlogger.info(\"alarm cleared\")\n\talarmInfo \u003d {\u0027tag\u0027: tag, \u0027tagPath\u0027: tagPath, \u0027alarmName\u0027: alarmName, \u0027alarmEvent\u0027: alarmEvent, \u0027alarmPath\u0027: alarmPath, \u0027missedEvents\u0027: missedEvents}\n\tsystem.util.sendMessage(project\u003d\"PentairPilot\", messageHandler\u003d\"alarmCleared\", payload\u003dalarmInfo, scope\u003d\"S\")"
+                    },
+                    {
+                      "eventid": "alarmAcked",
+                      "script": "\tsystem.util.sendMessage(\"PentairPilot\", \"alarmAcked\", scope\u003d\"S\")"
+                    }
+                  ],
+                  "name": "Alarm",
+                  "tagType": "AtomicTag",
+                  "value": false,
+                  "valueSource": "memory"
+                },
+                {
+                  "dataType": "Boolean",
+                  "name": "Part Produced",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "documentation": "A counter of parts produced (this can be derived from a complete/trigger tag)",
+                  "name": "Count",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "dataType": "Boolean",
+                  "name": "Part in Place",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "dataType": "Boolean",
+                  "name": "Station Complete",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "dataType": "Boolean",
+                  "name": "Producing",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "name": "Cycle Time",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                }
+              ]
+            },
+            {
+              "name": "Historize",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST5 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST5CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station8CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station8CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "WIP3",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/WIP3",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station6CTX",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station6CTX",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST1 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST1CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST1 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST1_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station5CTX",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station5CTX",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station4CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station4CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station4DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station4DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station6DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station6DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST7 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST7_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station3EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station3EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station9TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station9TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station10TapingOnOff",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station10TapingOnOff",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station3CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station3CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station5DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station5DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station5EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station5EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station6CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station6CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST6 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST6_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST8 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST8_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station6TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station6TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST2 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST2_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station9DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station9DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station8DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station8DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station1DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station1DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station2CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station2CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST10 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST10_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Time",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST3 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST3_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST9 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST9CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "TimeZone",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/TimeZone",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station3TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station3TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST9 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST9_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station2DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station2DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station7TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station7TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station9CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station9CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "WIP4",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/WIP4",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST7 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST7CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station4TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station4TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station4EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station4EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST4 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST4CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station7EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station7EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST8 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST8CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station5TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station5TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station1CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station1CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station1TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station1TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST4 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST4_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "TimeDay",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/TimeDay",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station2TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station2TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station6EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station6EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST2 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST2CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station7DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station7DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station3DN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station3DN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station2EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station2EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station5CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station5CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station1EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station1EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station1CTX",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station1CTX",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "WIP5",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/WIP5",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station8TT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station8TT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station4CTX",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station4CTX",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station9EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station9EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST5 Fault",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST5_Fault",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "WIP1",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/WIP1",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "WIP2",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/WIP2",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station7CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station7CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "WIP6",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/WIP6",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station3CTX",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station3CTX",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST6 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST6CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "ST3 Cycle Last Time",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/ST3CycleLastTime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station8EN",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station8EN",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station10CT",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station10CT",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Station2CTX",
+                  "sourceTagPath": "[Sanford Edge]P08-AL-IF3/Station2CTX",
+                  "tagType": "AtomicTag",
+                  "valueSource": "reference"
+                }
+              ]
+            },
+            {
+              "name": "OEE",
+              "tagType": "UdtInstance",
+              "tags": [
+                {
+                  "name": "Site UTC offset",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Reset Daily Counts",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Performance",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Target Rate",
+                      "tagType": "AtomicTag"
+                    }
+                  ]
+                },
+                {
+                  "name": "Add Hourly OEE",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Availability",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Uptime",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Planned Downtime",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Unplanned Downtime",
+                      "tagType": "AtomicTag"
+                    }
+                  ]
+                },
+                {
+                  "name": "Work Order Schedule Start",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Quality",
+                  "tagType": "Folder",
+                  "tags": [
+                    {
+                      "name": "Consecutive Scrap",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Good Parts",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Scrap Count",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Production Counter",
+                      "sourceTagPath": "",
+                      "tagType": "AtomicTag",
+                      "valueSource": "reference"
+                    },
+                    {
+                      "name": "Hourly Scrap",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Total Daily Count",
+                      "tagType": "AtomicTag"
+                    },
+                    {
+                      "name": "Work Order Count",
+                      "tagType": "AtomicTag"
+                    }
+                  ]
+                },
+                {
+                  "name": "Target",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Scrap",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "Machine Andon Trigger",
+                  "tagType": "AtomicTag"
+                },
+                {
+                  "name": "ProductionLineID",
+                  "tagType": "AtomicTag"
+                }
+              ],
+              "typeId": "OEE"
+            }
+          ]
+        },
+        {
+          "name": "Andon",
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "dataType": "Int4",
+              "name": "Andon Status",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "alarms": [
+                {
+                  "activePipeline": "Pentair_Pilot_2024_07_15/Maintenance Notification Pipeline",
+                  "displayPath": {
+                    "bindType": "UDTParameter",
+                    "value": "{RootInstanceName}"
+                  },
+                  "inclusiveA": false,
+                  "label": {
+                    "bindType": "Expression",
+                    "value": "if({[.]../Status} \u003d 0, \"Stopped\", \"Running\")"
+                  },
+                  "mode": "AboveValue",
+                  "name": "Maintenance Request",
+                  "priority": "Medium"
+                }
+              ],
+              "dataType": "Int4",
+              "name": "Andon Group",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "dataType": "Int4",
+              "name": "Reason01",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            }
+          ]
+        },
+        {
+          "name": "Shift",
+          "parameters": {
+            "ProductionLineID": {
+              "dataType": "Integer"
+            }
+          },
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "eventScripts": [
+                {
+                  "eventid": "valueChanged",
+                  "script": "\tparams \u003d {\"pShiftScheduleID\": previousValue.value}\n\t\n\tsystem.db.runNamedQuery(\"Shift/sp_PLAN_TransferShiftScheduleToHistory\", params)"
+                }
+              ],
+              "name": "Shift Schedule ID",
+              "sourceTagPath": "[.]Shift Data[0,0]",
+              "tagType": "AtomicTag",
+              "valueSource": "reference"
+            },
+            {
+              "dataType": "DateTime",
+              "formatString": "yyyy-MM-dd h:mm:ss aa",
+              "name": "EndTime",
+              "sourceTagPath": "[.]Shift Data[0,3]",
+              "tagType": "AtomicTag",
+              "valueSource": "reference"
+            },
+            {
+              "dataType": "DateTime",
+              "formatString": "yyyy-MM-dd h:mm:ss aa",
+              "name": "StartTime",
+              "sourceTagPath": "[.]Shift Data[0,2]",
+              "tagType": "AtomicTag",
+              "valueSource": "reference"
+            },
+            {
+              "dataType": "DataSet",
+              "datasource": "Ignition",
+              "executionMode": "FixedRate",
+              "executionRate": 30000,
+              "name": "Shift Data",
+              "query": "SELECT *\r\nFROM ShiftSchedule\r\nWHERE ProductionLineID \u003d {[.]Parameters.ProductionLineID}\r\nAND GETDATE() BETWEEN StartTime AND EndTime",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            }
+          ]
+        },
+        {
+          "name": "Work Order",
+          "parameters": {
+            "ProductionLineID": {
+              "dataType": "Integer"
+            }
+          },
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "name": "Good Count",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "name": "Quantity",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "name": "SKU",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "datasource": "ConnectedFactoryPilot",
+              "name": "ScheduleData",
+              "query": "SELECT {[.]ProductionLineID}",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            },
+            {
+              "name": "Name",
+              "tagType": "AtomicTag",
+              "valueSource": "memory"
+            },
+            {
+              "datasource": "ConnectedFactoryPilot",
+              "executionMode": "FixedRate",
+              "executionRate": 5000,
+              "name": "Work Order ID",
+              "query": "SELECT wo.ID\r\nFROM WorkOrder wo \r\nJOIN WorkOrderSchedule wos ON wo.ID \u003d wos.WorkOrderID\r\nWHERE ProductionLineID \u003d 10\r\nAND GETDATE() BETWEEN StartTime AND EndTime -- going from pacific to UTC time\r\n\r\n",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            }
+          ]
+        },
+        {
+          "name": "OEE",
+          "tagType": "UdtType",
+          "tags": [
+            {
+              "name": "ProductionLineID",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            },
+            {
+              "dataType": "Boolean",
+              "eventScripts": [
+                {
+                  "eventid": "valueChanged",
+                  "script": "\tif currentValue.value \u003d\u003d True:\n\t\tstatus \u003d system.tag.readBlocking([\"[.]../Status\"])[0].value\n\t\tplID \u003d system.tag.readBlocking([\"[.]ProductionLineID\"])[0].value\n\t\t\n\t\tparams \u003d {\"productionLineID\": plID}\n\t\twoID \u003d system.db.runNamedQuery(\"WorkOrder/GetActiveWorkOrderIDForAsset\", params)\n\t\t\n\t\tif int(status) \u003e 0 and int(woID) \u003e 0:\n\t\t\t#equipment \u003d self.view.custom.Equipment\n\t\t\t#processArea \u003d self.view.params.ProcessArea\n\t\t\t\n\t\t\t\n\t\t\t#site \u003d self.session.custom.ProductionSite + \"/\"\n\t\t\t\n\t\t\tsystem.tag.writeBlocking(\"[.]../Status\", 0)\n\t\t\tsystem.tag.writeBlocking(\"[.]../Andon/Andon Status\", 2)\n\t\t\t\n\t\t\t# Activate Andon Event\n\t\t\tpEventHeaderID \u003d None\n\t\t\tpID \u003d None\n\t\t\tpNotificationGroupID \u003d 5\n\t\t\tpTimestamp \u003d system.db.runNamedQuery(\u0027Downtime/GetUTC\u0027)[0][0]\n\t\t\tpProductionLineID \u003d plID\n\t\t\tpStatusID \u003d 2\n\t\t\tpIsDelete \u003d False\n\t\t\t\n\t\t\tparams \u003d {\"pEventHeaderID\": pEventHeaderID, \"pID\": pID, \"pNotificationGroupID\": pNotificationGroupID, \"pTimestamp\": pTimestamp, \"pProductionLineID\": pProductionLineID, \"pStatusID\": pStatusID, \"pIsDelete\": pIsDelete}\n\t\t\tsystem.db.runNamedQuery(\"Andon/sp_ANDON_AndonEvent\", params)\n\t\t\t\n\t\t\t#Activate Downtime and tie to Andon Event\n\t\t\tpID \u003d None\n\t\t\tpEquipmentID \u003d system.db.runNamedQuery(\u0027Equipment/GetProductionLineAsEquipment\u0027, {\"plID\": plID})\n\t\t\tpReasonID \u003d None\n\t\t\tpStartTime \u003d pTimestamp\n\t\t\tpCommentID \u003d None\n\t\t\tpAndonHeaderID \u003d system.db.runNamedQuery(\"Andon/GetAndonHeaderByTime\", {\"Timestamp\": pStartTime})\n\t\t\t\n\t\t\tparams \u003d {\"pID\": pID, \"pEquipmentID\": pEquipmentID, \"pReasonID\": pReasonID, \"pStartTime\": pStartTime, \"pEndTime\": None, \"pCommentID\": pCommentID, \"pAndonHeaderID\": pAndonHeaderID[0][0], \"pIsDelete\": False}\n\t\t\tsystem.db.runNamedQuery(\"Downtime/sp_GEN_DowntimeEvent\", params)\n\t\t\t\n\t\t\t#Set Work Order Status\n\t\t\t#woID \u003d self.view.custom.WorkOrderID\n\t\t\tif woID !\u003d -1:\n\t\t\t\toffset \u003d system.tag.readBlocking([\"[.]Site UTC offset\"])[0].value\n\t\t\t\tsystem.db.runNamedQuery(\"WorkOrder/UpdateWorkOrderScheduleStatus\", {\"WorkOrderID\": woID, \"StatusID\": 4, \"plID\": plID, \"Offset\": offset})\n\t\t"
+                }
+              ],
+              "expression": "{[.]../Historized/Mode Manual} || {[.]../Historized/Mode No Cycle} || {[.]../Historized/Mode Setup}",
+              "name": "Machine Andon Trigger",
+              "tagType": "AtomicTag",
+              "valueSource": "expr"
+            },
+            {
+              "eventScripts": [
+                {
+                  "eventid": "valueChanged",
+                  "script": "\tsystem.tag.writeBlocking([\"[.]Quality/Total Daily Count\"], [0])"
+                }
+              ],
+              "expression": "getDayOfYear(addMinutes( now(30000), {[.]Site UTC offset} * 60) )",
+              "name": "Reset Daily Counts",
+              "tagType": "AtomicTag",
+              "valueSource": "expr"
+            },
+            {
+              "dataType": "DateTime",
+              "datasource": "ConnectedFactoryPilot",
+              "executionMode": "FixedRate",
+              "executionRate": 30000,
+              "formatString": "yyyy-MM-dd h:mm:ss aa",
+              "name": "Work Order Schedule Start",
+              "query": "IF EXISTS(SELECT * FROM WorkOrderSchedule\r\n\t\t\tWHERE ProductionLineID \u003d {[.]ProductionLineID}\r\n\t\t\tAND GETUTCDATE() BETWEEN StartTime AND EndTime)\r\nBEGIN\r\n\tSELECT StartTime\r\n\tFROM WorkOrderSchedule\r\n\tWHERE ProductionLineID \u003d {[.]ProductionLineID}\r\n\tAND GETUTCDATE() BETWEEN StartTime AND EndTime\r\nEND\r\nELSE\r\nBEGIN\r\n\tSELECT DATEADD(d,0,DATEDIFF(d,0,GETDATE()))\r\nEND",
+              "queryType": "Select",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            },
+            {
+              "name": "Performance",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "expression": "",
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Target Rate",
+                  "tagType": "AtomicTag",
+                  "valueSource": "expr"
+                }
+              ]
+            },
+            {
+              "expression": "getTimezoneOffset()",
+              "name": "Site UTC offset",
+              "tagType": "AtomicTag",
+              "value": 0,
+              "valueSource": "memory"
+            },
+            {
+              "name": "Availability",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "expression": "secondsBetween(midnight(now()), now()) - {[.]Unplanned Downtime}",
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Uptime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "expr"
+                },
+                {
+                  "expression": "runScript(\"OEE.getPlannedDowntime\", 10000, {[.]../ProductionLineID}, midnight(now(0)), addDays(midnight(now(0)), 1))",
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Planned Downtime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "expr"
+                },
+                {
+                  "expression": "runScript(\"OEE.getUnplannedDowntime\", 10000, {[.]../ProductionLineID}, midnight(now(0)), addDays(midnight(now(0)), 1))",
+                  "historyEnabled": true,
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Unplanned Downtime",
+                  "tagType": "AtomicTag",
+                  "valueSource": "expr"
+                }
+              ]
+            },
+            {
+              "datasource": "ConnectedFactoryPilot",
+              "executionMode": "FixedRate",
+              "expression": "Select Quantity\r\nFrom WorkOrderSchedule wos\r\nJoin WorkOrderMolding wom ON wos.WorkOrderID \u003d wom.WorkOrderID\r\nWhere wos.ProductionLineID \u003d 0\r\nANd GETDATE() BETWEEN STartTime AND EndTime",
+              "name": "Target",
+              "query": "Select Quantity\r\nFrom WorkOrderSchedule wos\r\nJoin WorkOrderMolding wom ON wos.WorkOrderID \u003d wom.WorkOrderID\r\nWhere wos.ProductionLineID \u003d 0\r\nANd GETDATE() BETWEEN STartTime AND EndTime",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            },
+            {
+              "eventScripts": [
+                {
+                  "eventid": "valueChanged",
+                  "script": "\tplID \u003d system.tag.readBlocking([\"[.]ProductionLineID\"])[0].value\n\tOEE.addHourlyOEEDefaultHour(plID)"
+                }
+              ],
+              "expression": "getHour24(now(30000))",
+              "name": "Add Hourly OEE",
+              "tagType": "AtomicTag",
+              "valueSource": "expr"
+            },
+            {
+              "name": "Quality",
+              "tagType": "Folder",
+              "tags": [
+                {
+                  "eventScripts": [
+                    {
+                      "enabled": false,
+                      "eventid": "valueChanged",
+                      "script": "\tif currentValue.value \u003e\u003d 3:\n\t\tpEquipmentID \u003d system.db.runNamedQuery(\"Equipment/GetProductionLineAsEquipment\", {\"plID\": pProductionLineID})\n\t\t\n\t\talreadyDown \u003d system.db.runScalarQuery(\"SELECT * FROM DowntimeEvent WHERE EquipmentID \u003d ? AND (GETDATE() BETWEEN StartTime AND EndTime OR (GETDATE() \u003e StartTime AND EndTime IS NULL))\", [pEquipmentID])\n\t\n\t\tif len(alreadyDown) \u003d\u003d 0:\n\t\t\t# Activate Andon Event\n\t\t\tpEventHeaderID \u003d None\n\t\t\tpID \u003d None\n\t\t\tpNotificationGroupID \u003d 5\n\t\t\tpTimestamp \u003d self.view.custom.DateTimeNow\n\t\t\tpProductionLineID \u003d system.tag.readBlocking([\"[.]../ProductionLineID\"])[0]\n\t\t\tpStatusID \u003d 2\n\t\t\tpIsDelete \u003d False\n\t\t\t\n\t\t\tparams \u003d {\"pEventHeaderID\": pEventHeaderID, \"pID\": pID, \"pNotificationGroupID\": pNotificationGroupID, \"pTimestamp\": pTimestamp, \"pProductionLineID\": pProductionLineID, \"pStatusID\": pStatusID, \"pIsDelete\": pIsDelete}\n\t\t\tsystem.db.runNamedQuery(\"Andon/sp_ANDON_AndonEvent\", params)\n\t\t\t\n\t\t\t\n\t\t\t#Activate Downtime and tie to Andon Event\n\t\t\tpID \u003d None\n\t\t\tpEquipmentID \u003d self.view.params.EquipmentID\n\t\t\tpReasonID \u003d None\n\t\t\tpStartTime \u003d pTimestamp\n\t\t\tpCommentID \u003d None\n\t\t\tpAndonHeaderID \u003d system.db.runNamedQuery(\"Andon/GetAndonHeaderByTime\", {\"Timestamp\": pStartTime})\n\t\t\t\n\t\t\tparams \u003d {\"pID\": pID, \"pEquipmentID\": pEquipmentID, \"pReasonID\": pReasonID, \"pStartTime\": pStartTime, \"pEndTime\": None, \"pCommentID\": pCommentID, \"pAndonHeaderID\": pAndonHeaderID[0][0], \"pIsDelete\": False}\n\t\t\tsystem.db.runNamedQuery(\"Downtime/sp_GEN_DowntimeEvent\", params)\n\t\t\t\n\t\t\t#Set Work Order Status\n\t\t\twoID \u003d self.view.custom.WorkOrderID\n\t\t\t#if woID !\u003d -1:\n\t\t\t#\tsystem.db.runNamedQuery(\"WorkOrder/UpdateWorkOrderScheduleStatus\", {\"WorkOrderID\": woID, \"StatusID\": 4})\n\t\t\t\t\n\t\t\tsystem.tag.writeBlocking(\"[.]Consecutive Scrap\", [0])\n"
+                    }
+                  ],
+                  "name": "Consecutive Scrap",
+                  "tagType": "AtomicTag",
+                  "valueSource": "memory"
+                },
+                {
+                  "datasource": "ConnectedFactoryPilot",
+                  "eventScripts": [
+                    {
+                      "eventid": "valueChanged",
+                      "script": "\tif currentValue.value \u003e previousValue.value:\n\t\tvalue \u003d system.tag.readBlocking([\"[.]Consecutive Scrap\"])[0].value\n\t\tsystem.tag.writeBlocking([\"[.]Consecutive Scrap\"], [value + 1])"
+                    }
+                  ],
+                  "executionMode": "FixedRate",
+                  "executionRate": 3000,
+                  "historyEnabled": true,
+                  "historyMaxAge": 15,
+                  "historyMaxAgeUnits": "MIN",
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Scrap Count",
+                  "query": "SELECT COALESCE(SUM(Quantity), 0)\r\n  FROM [Scrap]\r\n  \r\n  WHERE EquipmentID IN (SELECT ID FROM dbo.GetEquipmentByProductionLineID({[.]../ProductionLineID}))\r\n\r\n  AND [Timestamp] \u003e \u0027{[.]../Work Order Schedule Start}\u0027",
+                  "tagType": "AtomicTag",
+                  "valueSource": "db"
+                },
+                {
+                  "eventScripts": [
+                    {
+                      "eventid": "valueChanged",
+                      "script": "\tif currentValue.value \u003e previousValue.value and ((currentValue.value - previousValue.value) \u003c 40):\n\t\tvalue \u003d system.tag.readBlocking([\"[.]Total Daily Count\"])[0].value\n\t\tdiff \u003d currentValue.value - previousValue.value\n\t\tsystem.tag.writeBlocking([\"[.]Total Daily Count\"], [value + diff])\n\t\tsystem.tag.writeBlocking([\"[.]Consecutive Scrap\"], [0])\n\t\t\n\t\tvalue \u003d system.tag.readBlocking([\"[.]Work Order Count\"])[0].value\n\t\tdiff \u003d currentValue.value - previousValue.value\n\t\tsystem.tag.writeBlocking([\"[.]Work Order Count\"], [value + diff])"
+                    }
+                  ],
+                  "name": "Production Counter",
+                  "opcServer": "Ignition OPC UA Server",
+                  "tagType": "AtomicTag",
+                  "valueSource": "opc"
+                },
+                {
+                  "name": "Hourly Scrap",
+                  "tagType": "AtomicTag",
+                  "valueSource": "db"
+                },
+                {
+                  "historyEnabled": true,
+                  "historyMaxAge": 15,
+                  "historyMaxAgeUnits": "MIN",
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Work Order Count",
+                  "tagType": "AtomicTag",
+                  "value": 0,
+                  "valueSource": "memory"
+                },
+                {
+                  "dataType": "Int4",
+                  "deriveExpressionGetter": "({[.]Total Daily Count} - {[.]Scrap Count}) ",
+                  "name": "Good Parts",
+                  "sourceTagPath": "",
+                  "tagType": "AtomicTag",
+                  "valueSource": "derived"
+                },
+                {
+                  "eventScripts": [
+                    {
+                      "eventid": "valueChanged",
+                      "script": "\tif currentValue.value \u003e previousValue.value:\n\t\tsystem.tag.writeBlocking([\"[.]Consecutive Scrap\"], [0])"
+                    }
+                  ],
+                  "historyEnabled": true,
+                  "historyMaxAge": 15,
+                  "historyMaxAgeUnits": "MIN",
+                  "historyProvider": "ConnectedFactoryPilot_Historian",
+                  "name": "Total Daily Count",
+                  "opcServer": "Ignition OPC UA Server",
+                  "sourceTagPath": "[.]Production Counter",
+                  "tagType": "AtomicTag",
+                  "value": 0,
+                  "valueSource": "memory"
+                }
+              ]
+            },
+            {
+              "datasource": "ConnectedFactoryPilot",
+              "executionMode": "FixedRate",
+              "name": "Scrap",
+              "query": "SELECT\r\n\tCOALESCE(SUM(s.Quantity), 0) AS ScrapCount\r\nFROM Scrap s\r\n\tLEFT JOIN WorkOrderSchedule wos ON s.WorkOrderID \u003d wos.WorkOrderID AND s.Timestamp BETWEEN wos.StartTime AND wos.EndTime\r\nWHERE s.WorkOrderID \u003d {[~]Sanford/Molding/SB01/Work Order/Work Order ID}\r\n\tAND s.Timestamp BETWEEN wos.StartTime AND wos.EndTime\r\n\tAND GETUTCDATE() BETWEEN wos.StartTime AND wos.EndTime",
+              "tagType": "AtomicTag",
+              "valueSource": "db"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GEC_LAB",
+      "tagType": "Folder",
+      "tags": [
+        {
+          "dataType": "Float4",
+          "name": "exh_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d437",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "pupm area4_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d431",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Pool_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d253",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "IOT_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d128",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "exh_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d454",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "SHAFT_A_WATER",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d582",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "RPDB_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d92",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "motor_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d224",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "SHAFT_A_FLOWRATE",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d570",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "TTIC_LAB_POWER",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d322",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "motor_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d207",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Elect_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d161",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Pump area1_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d345",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "pump area4_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d414",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Fitter_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d2",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Micro_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d293",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "pump area2_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d385",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Converter_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d230",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "RPDB_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d109",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Workshop_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d184",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "pump area3_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d391",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Filteration_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d299",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "openarea_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d31",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "Pump area1_Lab_reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d362",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "Micro_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d276",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "historyEnabled": false,
+          "name": "Converter_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d247",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "deadbandMode": "Off",
+          "formatString": "##.#######",
+          "name": "Water_Consumed",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d584",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "historyEnabled": false,
+          "name": "Elect_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d178",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Three_Phase_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d537",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Energy_Consumed",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d583",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "SHAFT_B_FLOWRATE",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d566",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Three_Phase_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d556",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "Fitter_Lab_Reaing",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d155",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "IOT_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d145",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "SHAFT_B_WATER",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d579",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "Pool_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d270",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "TTIC_LAB_READING",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d339",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "pump area3_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d408",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "openarea_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d14",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "pump area2_Lab_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d368",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Int4",
+          "name": "Filteration_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d316",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Single_Phase_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d531",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "name": "Worshop_Lab_Reading",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d201",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        },
+        {
+          "dataType": "Float4",
+          "name": "Single_Phase_Power",
+          "opcItemPath": "nsu\u003dhttp://redlion.net/UA/Crimson3/1/a314d940d6fbd8c1ecf69bc26bd40f0a/Tags;i\u003d513",
+          "opcServer": "GE_LAB",
+          "tagType": "AtomicTag",
+          "valueSource": "opc"
+        }
+      ]
+    }
+  ]
+}

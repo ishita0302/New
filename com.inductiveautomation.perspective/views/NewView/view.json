@@ -11,8 +11,8 @@
         "position": {
           "height": 135,
           "width": 400,
-          "x": 189,
-          "y": 145
+          "x": 155,
+          "y": 122
         },
         "props": {
           "data": [
@@ -130,6 +130,10 @@
     ],
     "meta": {
       "name": "root"
+    },
+    "position": {
+      "x": -109,
+      "y": -67
     },
     "type": "ia.container.coord"
   }
